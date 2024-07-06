@@ -21,6 +21,6 @@ jobs:
         cache: gradle
 
     - name: Grant execute permission for gradlew
-      run: cp gradlew Caustk/ && cd Caustk && chmod +x gradlew
+      run: cd CausticSDK && chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
